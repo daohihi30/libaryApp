@@ -194,6 +194,10 @@
     <Compile Include="Migrations\202010030649209_v2.Designer.cs">
       <DependentUpon>202010030649209_v2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202010041448247_v21.cs" />
+    <Compile Include="Migrations\202010041448247_v21.Designer.cs">
+      <DependentUpon>202010041448247_v21.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Author.cs" />
@@ -211,7 +215,11 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="assets\Duckduck.jpg" />
     <Content Include="assets\golang.png" />
+    <Content Include="assets\nghiangu.jpg" />
+    <Content Include="assets\wp4430524-books-4k-wallpapers.jpg" />
+    <Content Include="Content\bg.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -2189,6 +2197,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202010030649209_v2.resx">
       <DependentUpon>202010030649209_v2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202010041448247_v21.resx">
+      <DependentUpon>202010041448247_v21.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

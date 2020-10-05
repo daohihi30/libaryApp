@@ -3,8 +3,8 @@
 <div class="container">
 
     <div>
-        <h2 class="float-left">Độc Giả</h2>
-        <a class="btn btn-outline-primary float-right" href="@Url.Action("Create", "Pupils")" role="button">Thêm</a>
+        <h2 class="float-left">Pupils</h2>
+        <a class="btn btn-outline-primary float-right" href="@Url.Action("Create", "Pupils")" role="button">Create</a>
     </div>
 
     <table class=" table table-hover">
@@ -12,13 +12,13 @@
         <thead>
             <tr>
                 <th scope="col">
-                    @Html.DisplayNameFor(model => model.Author_first_name)
+                    @Html.DisplayNameFor(model => model.Pupils_first_name)
                 </th>
                 <th scope="col">
-                    @Html.DisplayNameFor(model => model.Author_middle_name)
+                    @Html.DisplayNameFor(model => model.Pupils_middle_name)
                 </th>
                 <th scope="col">
-                    @Html.DisplayNameFor(model => model.Author_last_name)
+                    @Html.DisplayNameFor(model => model.Pupils_last_name)
                 </th>
                 <th scope="col">
                     @Html.DisplayNameFor(model => model.Gender)
@@ -40,13 +40,13 @@
             {
             <tr>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Author_first_name)
+                    @Html.DisplayFor(modelItem => item.Pupils_first_name)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Author_middle_name)
+                    @Html.DisplayFor(modelItem => item.Pupils_middle_name)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Author_last_name)
+                    @Html.DisplayFor(modelItem => item.Pupils_last_name)
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.Gender)
@@ -61,9 +61,9 @@
                     @Html.DisplayFor(modelItem => item.Email)
                 </td>
                 <td>
-                    @Html.ActionLink("Sửa", "Edit", new { id = item.Id }) |
-                    @Html.ActionLink("Chi Tiết", "Details", new { id = item.Id }) |
-                    @Html.ActionLink("Xóa", "Delete", new { id = item.Id })
+                    @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.Id })
                 </td>
             </tr>
             }

@@ -44,7 +44,7 @@ namespace managementApp.Controllers
         public ActionResult Create()
         {
             ViewBag.Course_id = new SelectList(db.Courses, "Id", "Name");
-            ViewBag.Pupils_id = new SelectList(db.Pupils, "Id", "Author_first_name");
+            ViewBag.Pupils_id = new SelectList(db.Pupils, "Id", "Pupils_first_name", "Pupils_last_name");
             return View();
         }
 
@@ -64,7 +64,7 @@ namespace managementApp.Controllers
             }
 
             ViewBag.Course_id = new SelectList(db.Courses, "Id", "Name", pupilsOnCourse.Course_id);
-            ViewBag.Pupils_id = new SelectList(db.Pupils, "Id", "Author_first_name", pupilsOnCourse.Pupils_id);
+            ViewBag.Pupils_id = new SelectList(db.Pupils, "Id", "Pupils_last_name", pupilsOnCourse.Pupils_id);
             return View(pupilsOnCourse);
         }
 
@@ -82,7 +82,7 @@ namespace managementApp.Controllers
                 return HttpNotFound();
             }
             ViewBag.Course_id = new SelectList(db.Courses, "Id", "Name", pupilsOnCourse.Course_id);
-            ViewBag.Pupils_id = new SelectList(db.Pupils, "Id", "Author_first_name", pupilsOnCourse.Pupils_id);
+            ViewBag.Pupils_id = new SelectList(db.Pupils, "Id", "Pupils_last_name", pupilsOnCourse.Pupils_id);
             return View(pupilsOnCourse);
         }
 
@@ -101,7 +101,7 @@ namespace managementApp.Controllers
                 return RedirectToAction("Index");
             }
             ViewBag.Course_id = new SelectList(db.Courses, "Id", "Name", pupilsOnCourse.Course_id);
-            ViewBag.Pupils_id = new SelectList(db.Pupils, "Id", "Author_first_name", pupilsOnCourse.Pupils_id);
+            ViewBag.Pupils_id = new SelectList(db.Pupils, "Id", "Pupils_last_name", pupilsOnCourse.Pupils_id);
             return View(pupilsOnCourse);
         }
 

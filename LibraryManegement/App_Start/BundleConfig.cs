@@ -41,6 +41,9 @@ namespace LibraryManegement
 
             bundles.Add(new StyleBundle("~/Content/member").Include(
                      "~/Content/member.css"));
+
+            bundles.Add(new StyleBundle("~/Content/bg").Include(
+                     "~/Content/bg.css"));
         }
     }
 }

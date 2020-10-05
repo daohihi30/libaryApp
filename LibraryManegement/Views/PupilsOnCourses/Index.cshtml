@@ -4,7 +4,7 @@
 
     <div>
         <h2 class="float-left">Pupils On Course</h2>
-        <a class="btn btn-outline-primary float-right" href="@Url.Action("Create", "PupilsOnCourses")" role="button">Thêm</a>
+        <a class="btn btn-outline-primary float-right" href="@Url.Action("Create", "PupilsOnCourses")" role="button">Create</a>
     </div>
 
     <table class=" table table-hover">
@@ -15,7 +15,7 @@
                     @Html.DisplayNameFor(model => model.Course.Name)
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.Pupils.Author_first_name)
+                    Pupils
                 </th>
                 <th>
                     @Html.DisplayNameFor(model => model.Date_from)
@@ -34,7 +34,7 @@
                         @Html.DisplayFor(modelItem => item.Course.Name)
                     </td>
                     <td>
-                        @Html.DisplayFor(modelItem => item.Pupils.Author_first_name)
+                        @item.Pupils.Pupils_first_name @item.Pupils.Pupils_middle_name @item.Pupils.Pupils_last_name
                     </td>
                     <td>
                         @Html.DisplayFor(modelItem => item.Date_from)

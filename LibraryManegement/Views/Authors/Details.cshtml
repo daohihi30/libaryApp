@@ -4,39 +4,43 @@
     ViewBag.Title = "Details";
 }
 
-<h2>Details</h2>
 
-<div>
-    <h4>Author</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Author_first_name)
-        </dt>
+<div class="container">
+    <h2>Details</h2>
 
-        <dd>
-            @Html.DisplayFor(model => model.Author_first_name)
-        </dd>
+    <div>
+        <h4>Author</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Author_first_name)
+            </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Author_middle_name)
-        </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Author_first_name)
+            </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.Author_middle_name)
-        </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Author_middle_name)
+            </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Author_last_name)
-        </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Author_middle_name)
+            </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.Author_last_name)
-        </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Author_last_name)
+            </dt>
 
-    </dl>
+            <dd>
+                @Html.DisplayFor(model => model.Author_last_name)
+            </dd>
+
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Sửa", "Sửa", new { id = Model.Id }) |
+        @Html.ActionLink("Trở lại", "Index")
+    </p>
 </div>
-<p>
-    @Html.ActionLink("Sửa", "Sửa", new { id = Model.Id }) |
-    @Html.ActionLink("Trở lại", "Index")
-</p>
+

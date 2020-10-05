@@ -19,9 +19,9 @@ namespace LibraryManegement.Models
         public DateTime Book_of_publictaion { get; set; }
         [ForeignKey("Genres")]
         public long Genres_id { get; set; }
-        public Genres Genres { get; set; }
+        public virtual Genres Genres { get; set; }
 
-        public ICollection<Author> Authors { get; set; }
-        public ICollection<Course> Courses { get; set; }
+        public virtual ICollection<Author> Authors { get; set; }
+        public virtual ICollection<Course> Courses { get; set; }
     }
 }

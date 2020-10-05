@@ -10,9 +10,9 @@ namespace LibraryManegement.Models
     {
         [Key]
         public long Id { get; set; }
-        public string Author_first_name { get; set; }
-        public string Author_middle_name { get; set; }
-        public string Author_last_name { get; set; }
+        public string Pupils_first_name { get; set; }
+        public string Pupils_middle_name { get; set; }
+        public string Pupils_last_name { get; set; }
         public Gender Gender { get; set; }
         public string Address { get; set; }
         public string Phone_number { get; set; }

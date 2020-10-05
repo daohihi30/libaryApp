@@ -4,55 +4,58 @@
     ViewBag.Title = "Details";
 }
 
-<h2>Details</h2>
 
-<div>
-    <h4>Book</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Genres.Name)
-        </dt>
+<div class="container">
+    <h2>Details</h2>
 
-        <dd>
-            @Html.DisplayFor(model => model.Genres.Name)
-        </dd>
+    <div>
+        <h4>Book</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Genres.Name)
+            </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Number_of_copies)
-        </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Genres.Name)
+            </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.Number_of_copies)
-        </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Number_of_copies)
+            </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Book_title)
-        </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Number_of_copies)
+            </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.Book_title)
-        </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Book_title)
+            </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Book_price)
-        </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Book_title)
+            </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.Book_price)
-        </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Book_price)
+            </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Book_of_publictaion)
-        </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Book_price)
+            </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.Book_of_publictaion)
-        </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Book_of_publictaion)
+            </dt>
 
-    </dl>
+            <dd>
+                @Html.DisplayFor(model => model.Book_of_publictaion)
+            </dd>
+
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.IsBn }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
 </div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.IsBn }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>

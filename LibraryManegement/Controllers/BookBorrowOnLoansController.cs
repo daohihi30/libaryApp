@@ -43,7 +43,7 @@ namespace managementApp.Controllers
         public ActionResult Create()
         {
             ViewBag.Book_id = new SelectList(db.Books, "IsBn", "Book_title");
-            ViewBag.Pupils_id = new SelectList(db.Pupils, "Id", "Author_first_name");
+            ViewBag.Pupils_id = new SelectList(db.Pupils, "Id", "Pupils_last_name");
             return View();
         }
 
@@ -63,7 +63,7 @@ namespace managementApp.Controllers
             }
 
             ViewBag.Book_id = new SelectList(db.Books, "IsBn", "Book_title", bookBorrowOnLoan.Book_id);
-            ViewBag.Pupils_id = new SelectList(db.Pupils, "Id", "Author_first_name", bookBorrowOnLoan.Pupils_id);
+            ViewBag.Pupils_id = new SelectList(db.Pupils, "Id", "Pupils_last_name", bookBorrowOnLoan.Pupils_id);
             return View(bookBorrowOnLoan);
         }
 
@@ -81,7 +81,7 @@ namespace managementApp.Controllers
                 return HttpNotFound();
             }
             ViewBag.Book_id = new SelectList(db.Books, "IsBn", "Book_title", bookBorrowOnLoan.Book_id);
-            ViewBag.Pupils_id = new SelectList(db.Pupils, "Id", "Author_first_name", bookBorrowOnLoan.Pupils_id);
+            ViewBag.Pupils_id = new SelectList(db.Pupils, "Id", "Pupils_last_name", bookBorrowOnLoan.Pupils_id);
             return View(bookBorrowOnLoan);
         }
 
@@ -100,7 +100,7 @@ namespace managementApp.Controllers
                 return RedirectToAction("Index");
             }
             ViewBag.Book_id = new SelectList(db.Books, "IsBn", "Book_title", bookBorrowOnLoan.Book_id);
-            ViewBag.Pupils_id = new SelectList(db.Pupils, "Id", "Author_first_name", bookBorrowOnLoan.Pupils_id);
+            ViewBag.Pupils_id = new SelectList(db.Pupils, "Id", "Pupils_last_name", bookBorrowOnLoan.Pupils_id);
             return View(bookBorrowOnLoan);
         }
 

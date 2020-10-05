@@ -51,7 +51,7 @@ namespace managementApp.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Author_first_name,Author_middle_name,Author_last_name,Gender,Address,Phone_number,Email")] Pupils pupils)
+        public ActionResult Create([Bind(Include = "Id,Pupils_first_name,Pupils_middle_name,Pupils_last_name,Gender,Address,Phone_number,Email")] Pupils pupils)
         {
             if (ModelState.IsValid)
             {
@@ -85,7 +85,7 @@ namespace managementApp.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,Author_first_name,Author_middle_name,Author_last_name,Gender,Address,Phone_number,Email")] Pupils pupils)
+        public ActionResult Edit([Bind(Include = "Id,Pupils_first_name,Pupils_middle_name,Pupils_last_name,Gender,Address,Phone_number,Email")] Pupils pupils)
         {
             if (ModelState.IsValid)
             {

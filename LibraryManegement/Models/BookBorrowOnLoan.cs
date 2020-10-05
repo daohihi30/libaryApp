@@ -14,12 +14,12 @@ namespace LibraryManegement.Models
 
         [ForeignKey("Book")]
         public long Book_id { get; set; }
-        public Book Book { get; set; }
+        public virtual Book Book { get; set; }
 
         [ForeignKey("Pupils")]
         public long Pupils_id { get; set; }
 
-        public Pupils Pupils { get; set; }
+        public virtual Pupils Pupils { get; set; }
         public double Fine_paid { get; set; }
         public bool Lost { get; set; }
         public int Overdue { get; set; }

@@ -13,6 +13,6 @@ namespace LibraryManegement.Models
         public string Author_first_name { get; set; }
         public string Author_middle_name { get; set; }
         public string Author_last_name { get; set; }
-        public ICollection<Book> Books { get; set; }
+        public virtual ICollection<Book> Books { get; set; }
     }
 }
